@@ -147,3 +147,74 @@ es. [f, b, e] --> [6, 2, 5]
 */
 const charactersArray = ["g", "n", "u", "z", "d"];
 console.log("esercizio 10 :");
+const numberFromCharacters = [];
+for (let i = 0; i < charactersArray.length; i++) {
+  let temp;
+  switch (charactersArray[i]) {
+    case "a":
+      temp = 1;
+      break;
+    case "b":
+      temp = 2;
+      break;
+    case "c":
+      temp = 3;
+      break;
+    case "d":
+      temp = 4;
+      break;
+    case "e":
+      temp = 5;
+      break;
+    case "f":
+      temp = 6;
+      break;
+    case "g":
+      temp = 7;
+      break;
+    case "h":
+      temp = 8;
+      break;
+    case "i":
+      temp = 9;
+      break;
+    case "l":
+      temp = 10;
+      break;
+    case "m":
+      temp = 11;
+      break;
+    case "n":
+      temp = 12;
+      break;
+    case "o":
+      temp = 13;
+      break;
+    case "p":
+      temp = 14;
+      break;
+    case "q":
+      temp = 15;
+      break;
+    case "r":
+      temp = 16;
+      break;
+    case "s":
+      temp = 17;
+      break;
+    case "t":
+      temp = 18;
+      break;
+    case "u":
+      temp = 19;
+      break;
+    case "v":
+      temp = 20;
+      break;
+    case "z":
+      temp = 21;
+      break;
+  }
+  numberFromCharacters.push(temp);
+}
+console.log(numberFromCharacters);
