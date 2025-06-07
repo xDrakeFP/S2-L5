@@ -218,3 +218,12 @@ for (let i = 0; i < charactersArray.length; i++) {
   numberFromCharacters.push(temp);
 }
 console.log(numberFromCharacters);
+
+// Ho trovato questo metodo online ma non era riadattabile all'alfabeto italiano e non utilizzava switch
+console.log("Piccolo extra dell'esercizio 10");
+const numberFromCharactersAlt = [];
+for (let i = 0; i < charactersArray.length; i++) {
+  let temp = charactersArray[i].charCodeAt(0); //charCodeAt restituisce il codice UNICODE del carattere, con (0) si da l'indice della stringa che gli dai (in questo caso 0 dato che e' un singolo carattere)
+  numberFromCharactersAlt.push(temp - 96); // Gli sottraggo 96 perche la lettera 'a' dell'alfabeto in minuscolo ha un valore di 97,
+}
+console.log(numberFromCharactersAlt);
